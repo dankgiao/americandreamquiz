@@ -1,0 +1,165 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.61) 0%, rgba(255, 255, 255, 0.61) 100%), url("image/q1.png") lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+#quiz {
+  display: flex;
+  width: 90rem;
+  padding: 2.375rem 8.9375rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1875rem;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+#quiz-title {
+  color: #000;
+  text-align: center;
+
+  /* H1 */
+  font-family: "Playfair Display";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.08rem;
+}
+
+#quiz-dialogue {
+  color: #AC3723;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.04rem;
+}
+
+#question {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+
+  /* H2 */
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+}
+
+#options-container {
+  display: flex;
+  width: 45.6875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#options {
+  display: flex;
+  width: 45.6875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option-button {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.875rem;
+  border: 1px solid #000;
+  background: #FFF;
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option-button:hover {
+  border-radius: 1.875rem;
+  border: 1px solid #696868;
+  background: #FDF5EF;
+}
+
+.option-button.selected {
+  border-radius: 1.875rem;
+  border: 1px solid #000;
+  background: var(--Sandy, #EDDACC);
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: white;
+  color: #131313;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f8d8d;
+}
+
+#submit, #restart-button {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--America-Sky, #00336A);
+  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.40) inset, 0px 6px 2px -4px rgba(14, 14, 44, 0.10);
+  color: white;
+
+  /* Button text */
+  font-family: "Playfair Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+
+#review-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+/* Optional: Make scroll look clean */
+#review-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+#review-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+#review-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

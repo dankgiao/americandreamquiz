@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    padding: 19.8125rem 22.9375rem;
+    background-size: 100vw 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9375rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.61) 0%, rgba(255, 255, 255, 0.61) 100%), url("image/background.png") lightgray 50% / cover no-repeat;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+
+h2 {
+    color: #00336A;
+    /* H2 */
+    font-family: "Playfair Display";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+}
+
+#get-started {
+    color: var(--Firework, #AC3723);
+    /* H2 */
+    font-family: "Playfair Display";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    background: none;
+    border: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>American Quiz Title Screen</title>
+  <link rel="stylesheet" type="text/css" href="styletitle.css">
+</head>
+<body>
+  <img src="image/title.png" alt="Quiz Title">
+  <h2>A Quiz!</h2>
+  <a id="get-started" href="index.html">Get Started 👉</a>
+
+  <audio id="bg-music" src="image/USA.mp3" loop></audio>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const music = document.getElementById("bg-music");
+
+      // Try autoplay
+      const playPromise = music.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            console.log("Autoplay started!");
+          })
+          .catch((error) => {
+            console.log("Autoplay failed — waiting for user interaction.");
+            // Add interaction fallback
+            document.body.addEventListener("click", () => {
+              music.play();
+            }, { once: true });
+          });
+      }
+    });
+  </script>
+</body>
+</html>
